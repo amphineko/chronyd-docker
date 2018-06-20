@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+        chrony:
+                build: ./chrony
+                volumes:
+                        - ./data:/data
