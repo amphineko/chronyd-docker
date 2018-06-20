@@ -5,5 +5,7 @@ services:
                 build: ./chrony
                 ports:
                         - 123
+                privileged: true
+                restart: always
                 volumes:
                         - ./data:/data
